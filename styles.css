@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #222831;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  max-width: 1200px;
+}
+
+header img {
+  max-width: 100px; /* أو حسب اللي يناسب تصميمك */
+  height: auto;
+  display: block; /* ينصح بها لمنع الهوامش الغريبة */
+}
+
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation a:hover {
+  color: #00adb0;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.arrow {
+  position: absolute;
+  transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.herobasheq {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 4rem;
+  color: #00adb5;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  gap: 10rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* المسافة بين About و Me */
+    font-size: 2.5rem; /* خليها أصغر شوي عشان ما تطلع كبيرة مرة */
+    justify-content: stretch; /* عشان تكون بالكادر في المنتصف */
+    margin-bottom: 1rem; /* مسافة تحت العنوان */
+}
+
+
+.aboutName {
+  color: #ffffff;
+}
+
+.aboutTitle {
+  color: #00adb5;
+}
+
+.aboutMePar {
+    text-align: justify;
+    color: rgba(238, 238, 238, 0.75);
+    margin: 2rem 1.5rem 5rem 1.5rem; /* فوق - يمين - تحت - يسار */
+    line-height: 1.6;
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+/* .works {
+  padding: 10rem;
+  margin: 5rem;
+}
+
+.worksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 5rem auto;
+  max-width: 1200px;
+} */
+
+.conMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.conTit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 20rem;
+}
+
+.con h3,
+.con a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.emailandphone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+
+.media img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  color: #eeeeee;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .heroImg {
+    width: 400px;
+  }
+
+  .name,
+  .title {
+    font-size: 2rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .textContainer {
+    align-items: center;
+    margin: 0 5rem;
+    gap: 1rem;
+  }
+
+  .aboutName,
+  .aboutTitle {
+    font-size: 2rem;
+  }
+
+  .light {
+    width: 60px;
+  }
+
+  .aboutMeImg {
+    width: 400px;
+  }
+
+  .works {
+    padding: 0;
+  }
+
+  .worksContainer {
+    padding: 5rem 0;
+    gap: 3rem;
+  }
+
+  .projectTitle {
+    margin-left: 1rem;
+  }
+
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+}
