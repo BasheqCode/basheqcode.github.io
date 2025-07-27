@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #222831;
+  background-color: #D7CCC8;
   overflow-x: hidden;
 }
 
@@ -41,7 +41,7 @@ header img {
 }
 
 .navigation a:hover {
-  color: #00adb0;
+  color: #0006064;
 }
 
 hr {
@@ -69,12 +69,12 @@ hr {
 
 .name {
   font-size: 3rem;
-  color: #ffffff;
+  color: #F1F8E9;
 }
 
 .title {
   font-size: 4rem;
-  color: #00adb5;
+  color: #006064;
 }
 
 .aboutMe {
@@ -105,7 +105,7 @@ hr {
 }
 
 .aboutTitle {
-  color: #00adb5;
+  color: #006064;
 }
 
 .aboutMePar {
@@ -160,7 +160,7 @@ hr {
 
 .con h3,
 .con a {
-  color: #eeeeee;
+  color: #0E474F;
   text-decoration: none;
 }
 
@@ -187,7 +187,7 @@ hr {
 }
 
 footer {
-  color: #eeeeee;
+  color: #034246;
   padding: 2rem;
   text-align: center;
 }
